@@ -1,24 +1,29 @@
-# MediaManager
+# Media Manager 
+## Introduction:
+Media Manager is a feature-rich iOS mobile application designed to efficiently manage media files fetched from various data sources. This technical documentation provides an overview of the application's architecture, key features, and implementation details.
 
-## Objective
-Media Manager is an iOS mobile application that manages media files fetched from a data sources.
+## Architecture Overview:
 
-## Features
-* App has two modes, List view and Grid view. 
-* The media files can be fetched from Camera Roll, Application Bundle or Google Photos.
-* Users can share media files with others via different platforms. 
-* They can  delete the media files.
-* The media files can be grouped based on month and year.
-* It can be sorted based on their name, size and creation date.
-* They can also be filtered based on their media type. 
-* Media files can be marked as favorites too.
-* If a particular media file is clicked, it is displayed in full screen mode.
+The Media Manager application follows a structured architecture to ensure scalability, maintainability, and performance. It leverages UIKit framework for the user interface, CoreData framework for data persistence, and several other frameworks for specific functionalities.
 
-## Implementation
-* List view implemented using **UIListViewController**.
-* Grid view is implemented using **UICollectionViewController**.
-* The Google photos integration done using **OAuth 2.0** and **REST API** to fetch and decode the JSON meta data of the media files.
-* Utilized **CoreData Framework** for the persistance of favorites.
-* Used **NSCache** for Caching.
-* **Dispatch Queue** for multi-threading. 
+## Key Features:
 
+- List View and Grid View: Users can seamlessly switch between two modes to view media files in either a list or grid layout.
+- Data Source Integration: The application supports fetching media files from multiple sources, including Camera Roll, Application Bundle, and Google Photos. Integration with Google Photos is achieved through OAuth 2.0 authentication and REST API for fetching and decoding JSON metadata.
+- Sharing and Deletion: Users can easily share media files with others using various platforms. Additionally, they have the option to delete unwanted media files effortlessly.
+- Grouping and Sorting: Media files can be grouped based on month and year, allowing users to navigate through their collection efficiently. Sorting options based on name, size, and creation date provide further customization.
+- Filtering and Favorites: Users can filter media files based on their type, enabling quick access to specific content. Additionally, they can mark media files as favorites for easy retrieval later. CoreData framework is utilized for efficient favorite media file persistence.
+- Full-Screen Display: When a user clicks on a particular media file, it is displayed in full-screen mode, providing a rich and immersive viewing experience.
+
+## Implementation Details:
+
+The Media Manager application utilizes various iOS frameworks and technologies to deliver its features and functionalities:
+- List View: Implemented using UIListViewController, allowing users to scroll through media files efficiently.
+- Grid View: Implemented using UICollectionViewController, providing an aesthetically pleasing and interactive grid-based media file display.
+- Google Photos Integration: Achieved through OAuth 2.0 authentication and REST API for fetching and decoding JSON metadata.
+- CoreData Framework: Utilized for seamless and efficient persistence of favorite media files.
+- NSCache: Employed for caching frequently accessed media files, enhancing performance and responsiveness.
+- Dispatch Queue: Utilized for multi-threading, ensuring smooth user experience even during resource-intensive tasks.
+
+## Conclusion:
+The Media Manager iOS application showcases my ability to learn and implement new technologies swiftly. It offers a user-friendly interface, seamless integration with various data sources, efficient data management, and optimized performance. By leveraging iOS frameworks and adopting best coding practices, the application demonstrates a robust and scalable architecture.
